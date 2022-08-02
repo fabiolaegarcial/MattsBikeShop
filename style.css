@@ -308,6 +308,88 @@ header a{
 
 
 
+
+
+
+
+
+
+.foot-container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+.footer{
+    background-color: #000000;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0.15px;
+}
+.footer-col h4{
+    font: 18px;
+    color: #ffffff
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e1b30c;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transform: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #F4AC00;
+    padding-left: 1px;
+}
+.footer-logo{
+	width: clamp(3.5em, 5.5em + 1vw , 6.5em);
+    margin-left: 3em ;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+}
+}
+
+
+
+
+
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 575px){ /*  -->  */
 	#menu-icon{
