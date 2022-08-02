@@ -83,7 +83,7 @@ header a{
 /*************** HOME PAGE ***************/
 /* WELCOME SECTION */
 .heroBack{
-	background-image: url("edited - munbaik-cycling-clothing-fwFRsmPOkGw-unsplash.png");
+	background-image: url("./home-images/edited - munbaik-cycling-clothing-fwFRsmPOkGw-unsplash.png");
 	height: clamp(30em, 52em + 2vw, 70em); 
 	background-position-x: center;
 	background-size: cover;
@@ -144,7 +144,7 @@ header a{
 /* SHOP PROMOTION SECTION */
 .shopPromo{
     background-color: #000000;
-	background-image: url("TRNS-bike-product.png");
+	background-image: url("./home-images/TRNS-bike-product.png");
     box-shadow: 0 0 30px 20px #000000 inset;
 	min-height: 600px; /* Designing with smallest screen in mind first*/
 	background-position-x: -22em;
