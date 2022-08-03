@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <title>Silver Comet Trail</title> <!-- trail name -->
+    <link rel="icon" type="image/x-icon" href="./home-images/MattsLogoWhite.png">
+</head>
+<body class="trails">
+    <!-- NAVBAR -->
+    <header>
+        <a href="index.html"><img src="./home-images/MattsLogoWhite.png" class="logo" alt="Matt's Bike Shop Logo"><h1 class="title">&#160 MATT'S BIKE SHOP</h1></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="shop.html">SHOP</a></li>
+			<li><a href="blog.html" style="color: #F4AC00">BLOG</a></li>
+            <div class="icons">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <!-- add search onclick expansion -->
+            </div>
+		</ul>
+	</header>
+
+
+    <br><br><br><br><br><br>
+
+    <!-- TRAIL INFO -->
+    <main class="trail-page">
+        <!-- Post Content -->
+        <section class="articleContainer">
+            <article id="trailPost">
+                <!-- Article Header -->
+                <div class="article-header">
+                    <div class="category">
+                        <p>EASY</p>
+                    </div>
+
+                    <div class="tr-title">
+                        <h2 class="post-title">SILVER COMET TRAIL</h2>
+                    </div>
+
+                    <div class="meta">
+                        <p href="#" class="link display-2 text-secondary px-1">
+                            <i class='bx bxs-map-pin' id="trail-address"></i></i> 4342 Floyd Road, Mableton, GA 30126
+                        <p>
+                        <p href="#" class="link display-2 text-secondary px-1">
+                            <i class='bx bxs-message-detail' id="post-comments"></i>2
+                        </p>
+                    </div>
+                </div>
+
+                 <!-- content -->
+                <div class="post-content">
+                    <p> 
+                        The Silver Comet Trail runs west through Cobb, Paulding, and Polk counties. This quiet, non-motorized, paved trail is for walkers, hikers, bicyclists, rollerbladers, horses, dog walkers, and is wheelchair accessible. The Silver Comet Trail is 61.5 miles long, and starts at the Mavell Road Trailhead in Smyrna, Georgia. It ends at the Georgia/Alabama state line, near Cedartown and The Esom Hill Trailhead.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem a saepe architecto cum veritatis corrupti odio, voluptates hic tempore dolorum laboriosam, voluptas culpa eius reiciendis autem nihil consectetur quisquam odit modi accusamus quasi earum ipsam aliquam. Quaerat inventore repudiandae dolorum. Inventore quis tempore perferendis atque error, dolores illum similique fugit, voluptate fugiat animi non provident harum corrupti architecto possimus! Dolorum repellat unde, fuga dolores sapiente reprehenderit nobis consectetur, quia ut veniam vitae quod. Similique, modi.
+                    </p>
+                  
+                </div>
+
+                <!-- Comments -->
+                <div class="post-comments">
+                    <h3 class="num-comments">2 COMMENTS</h3>
+
+                    <div class="comment-details">
+                        <div class="comment-item">
+                            <div class="d-flex">
+                                <div class="comment-content">
+                                    <h5 class="comment-name">Jabari Clarke</h5>
+                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+            
+                                    <p class="comment-text">
+                                        Definitely a hidden gem. Great for a social distance meetup. Trail is about 60 miles end to end and could be considered easy to moderate. No major climbing and a lot of canopy cover. Small children had a blast and did not get tired. At one end is an open plaza / meditation area. Ideal for a book club or just some quiet time. Parking is a bit tricky. Apartment complex across the street has visitor parking but I wouldn't chance it. Try closer to Briar Vista elementary but not in its parking lot. Overall, great experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment-item">
+                            <div class="d-flex">
+                                <div class="comment-content">
+                                    <h5 class="comment-name">Cara O’Grady</h5>
+                                    <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+
+                                    <p class="comment-text">
+                                        Love this trail so much - very short and easy, but surprisingly peaceful for its location. We’ve been walking it since before Oldcastle worked on it and were/remain astonished by how much work and love the Oldcastle volunteers put into this little trail. Wonderful any time of year, but particularly beautiful in the spring and fall (although the tree canopy makes it one of the coolest outdoor spaces around in the summer!)
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                
+                <!-- Submit Comments -->
+                <div class="submit-comment">
+                    <form>
+                        <h5 class="formSubhead">SUBMIT YOUR COMMENT</h5><br>
+
+                        FULL NAME <BR> <input class="formInput" type="text" size=20 name="Name">
+                        <br><br>
+
+                        <div class="star-rating"> STAR RATING <br>
+                            <input class="option" type="radio" name="stars" value="1"/>1 &#160
+                            <input class="option" type="radio" name="stars" value="2"/>2 &#160
+                            <input class="option" type="radio" name="stars" value="3"/>3 &#160
+                            <input class="option" type="radio" name="stars" value="4"/>4 &#160
+                            <input class="option" type="radio" name="stars" value="5"/>5
+                        <br><br>
+                        </div>
+
+                        COMMENTS <BR> 
+                        <textarea class="commentsBox"></textarea><br><br>
+
+                        <input class="formButton reset" type="reset" name="reset" value="reset">
+                        <input class="formButton submit" type="submit" name="submit" value="submit">
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="row">
+                <div class="footer-col" id="row-one">
+                    <a href="index.html"><img src="./home-images/MattsLogoWhite.png" class="footer-logo" alt="Matt's Bike Shop Logo"></a>
+                </div>
+                <div class="footer-col" id="row-two">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="#aboutUs">ABOUT US</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="row-three">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="tel:9565290298">CALL US</a></li>
+                        <li><a href="">EMAIL US</a></li>
+                        <li><a href="blog.html">FIND A TRAIL NEAR YOU</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="row-four">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="shop.html">SHOP ALL BIKES</a></li>
+                        <li><a href="shop.html">ELECTRIC BIKES</a></li>
+                        <li><a href="shop.html">MOUNTAIN BIKES</a></li>
+                        <li><a href="shop.html">HELMETS</a></li>
+                    </ul>
+                </div>            
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
