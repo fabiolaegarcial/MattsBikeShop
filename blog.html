@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="style.css">
 
-    <title>Blog</title>
+    <title>Blog</title>  
+    <link rel="icon" type="image/x-icon" href="./home-images/MattsLogoWhite.png">
+
 </head>
 <body class="blog-page">
     <!-- NAVBAR -->
@@ -40,13 +42,36 @@
         <div class="routeBlog">
             <h1 class="blog-title">LOCAL BIKING ROUTES</h1>
             <h5 class="blog-sub">BLOG ABOUT YOUR EXPERIENCE!</h5>
+            <p><i>Select a biking route for more information about that route, to read reviews from other people in our community, and to leave your review.</i></p>
         </div>
 
-        <div>
-            <h3>POPULAR TRAILS</h3>
+        <div class="blog-box">
+            <h2>POPULAR BIKING TRAILS</h2>
+            <h4>
+                <span class="trail-difficulty easy" id="blog-legend">E</span>EASY 
+                <span class="trail-difficulty moderate" id="blog-legend">M</span>MODERATE
+                <span class="trail-difficulty advanced" id="blog-legend">A</span>ADVANCED
+            </h4>
+            <ul>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>SILVER COMET TRAIL</li> <!-- VE -->
+                <li onclick="openTrail(0)"><span class="trail-difficulty advanced">A</span>STONE MOUNTAIN TRAIL PATH</li> <!-- M-A -->
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>BIG CREEK GREENWAY</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty moderate">M</span>RICO STARR LOOP</li> <!-- E-M -->
+                <li onclick="openTrail(0)"><span class="trail-difficulty moderate">M</span>ARABIA MOUNTAIN PATH</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>CAMP CREEK GREENWAY</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty moderate">M</span>CHASTAIN MEMORIAL PARK</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>NOONDAY CREEK TRAIL</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>EASTSIDE BELTLINE TRAIL</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>SUWANEE GREENWßAY</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>SOUTH PEACHTREE CREEK</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>PROCTER CREEK TRAIL</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>EAST COBB PARK</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty moderate">M</span>CARROLLTON GREENBELT</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty easy">E</span>NANCY CREEK TRAIL</li>
+                <li onclick="openTrail(0)"><span class="trail-difficulty moderate">M</span>SYKES PARK</li> <!-- E-M -->
+                <li onclick="openTrail(0)"><span class="trail-difficulty moderate">M</span>MICHELLE OBAMA TRAIL</li>
+            </ul>
         </div>
-
-
 
 
     </section>
@@ -65,7 +90,7 @@
                 <div class="footer-col">
                     <h4></h4>
                     <ul>
-                        <li><a href="#aboutUs">ABOUT US</a></li>
+                        <li><a href="index.html#aboutUs">ABOUT US</a></li>
                         <li><a href="shop.html">SHOP</a></li>
                         <li><a href="blog.html">BLOG</a></li>
                     </ul>
