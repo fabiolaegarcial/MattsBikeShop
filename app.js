@@ -41,11 +41,11 @@ function initMap() {
 
     //adding biking trail markers
     trailsCoordinates.forEach(location => {
-      addMarker(location);
+      addMarker(location.coord, location.text);
     });
 
-    function addMarker(location) {
-      new google.maps.Marker({
+    function addMarker(location, text) {
+      let mark = new google.maps.Marker({
         position: location,
         map: map,
         icon: {
@@ -53,19 +53,25 @@ function initMap() {
           scaledSize: new google.maps.Size(30, 30),
         },
       });
+      var markWindow = new google.maps.InfoWindow({
+        content: text,
+      });
+      mark.addListener('click', function(){
+        markWindow.open(map, mark);
+      })
     }
 }
 
 
 let trailsCoordinates = [
-  {lat:33.847640, lng:-84.585740},
-  {lat:33.804821, lng:-84.172440},
-  {lat:33.899640, lng:-84.515740},
-  {lat:33.747140, lng:-84.681740},
-  {lat:33.747640, lng:-84.185740},
-  {lat:33.647640, lng:-84.285740},
-  {lat:33.717640, lng:-84.285740},
-  {lat:33.647640, lng:-84.485740},
+  {coord:{lat:33.847640, lng:-84.585740}, text: '<h3><a href="silver-comet-trail.html"> Arabia Mountain Path </a></h3>'},
+  {coord:{lat:33.804821, lng:-84.172440}, text: '<h3><a href="silver-comet-trail.html"> Stone Mountain Trail Path </h3>'},
+  {coord:{lat:33.899640, lng:-84.515740}, text: '<h3><a href="silver-comet-trail.html"> Rico Starr Loop </h3>'},
+  {coord:{lat:33.747140, lng:-84.681740}, text: '<h3><a href="silver-comet-trail.html"> Big Creek Greenway </h3>'},
+  {coord:{lat:33.747640, lng:-84.185740}, text: '<h3><a href="silver-comet-trail.html"> Camp Creek Greenway </h3>'},
+  {coord:{lat:33.647640, lng:-84.285740}, text: '<h3><a href="silver-comet-trail.html"> Chastain Memorial Park </h3>'},
+  {coord:{lat:33.717640, lng:-84.285740}, text: '<h3><a href="silver-comet-trail.html"> Silver Comet Trail </h3>'},
+  {coord:{lat:33.647640, lng:-84.485740}, text: '<h3><a href="silver-comet-trail.html"> Noonday Creek Trail </h3>'}
 ]
 
 
